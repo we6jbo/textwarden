@@ -1,12 +1,3 @@
-#include <QApplication>
+// TextWarden v0.1.4: pure C++17 console executable.
 #include "mainwindow.h"
-
-int main(int argc, char *argv[])
-{
-    QApplication app(argc, argv);
-
-    MainWindow window;
-    window.show();
-
-    return app.exec();
-}
+int main(int argc, char** argv) { return textwardenRun(argc, argv); }

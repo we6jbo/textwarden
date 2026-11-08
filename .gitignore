@@ -1,3 +1,6 @@
+# Local backups, old reader, executables, build results
+backup/
+sufficiently_educated_reader.cpp
 build/
 build-*/
 cmake-build-*/
@@ -5,3 +8,44 @@ CMakeFiles/
 CMakeCache.txt
 *.o
 *.user
+textwarden
+*.tmp
+*.job
+# Approved for Git tracking as a data format (publication requires separate review)
+sufficiently_educated.twu
+# Never commit local mail credentials or outgoing message logs.
+smtp_password
+publisher_sent.jsonl
+
+# Local publication / review audit logs and manual staging (user-private)
+outreach_activity.jsonl
+git_review_first_done.txt
+git_review_periodic_slot.txt
+git_review_pending.txt
+publisher_reminder_slot.txt
+publisher_pending_reminders.txt
+6721.txt.tmp
+
+# Mail confidentiality and independent AI workspace
+mail_checks.jsonl
+mail_check_reminder_slot.txt
+mail_*.eml
+*.credentials
+
+# Do not commit backups or any live mail state
+*.backup-*
+*backup-*
+pastor_outreach.json
+pastor_reminder_day.txt
+*mail*password*
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Private one-to-one pastoral correspondence source. Never Git publish.
+pastor_outreach.py
+
+# Private project context
+tg_context_snapshot.json
